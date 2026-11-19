@@ -97,25 +97,40 @@
   </nav>
 
   <section>
-    <form method="POST" action="https://your-api-endpoint.com/api/book-appointment">
+    <form id="bookingForm" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSd8teUEjcEH83QkzKiT9cHVW3NYtnsbsPMJUZX8IULrX8RugQ/formResponse" target="hidden_iframe">
       <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required />
+      <input type="text" id="name" name="entry.1450040426" required />
 
       <label for="company">Company Name</label>
-      <input type="text" id="company" name="company" />
+      <input type="text" id="company" name="entry.1727145170" />
 
       <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required />
+      <input type="email" id="email" name="entry.1227469851" required />
 
       <label for="date">Preferred Date</label>
-      <input type="date" id="date" name="date" required />
+      <input type="date" id="date" name="entry.298420541" required />
 
       <label for="details">What services are you interested in?</label>
-      <textarea id="details" name="details" rows="5" required></textarea>
+      <textarea id="details" name="entry.439661853" rows="5" required></textarea>
 
       <button type="submit">Confirm Booking</button>
     </form>
+    <iframe name="hidden_iframe" style="display:none"></iframe>
   </section>
+
+<script>
+var submitted = false;
+document.getElementById('bookingForm').addEventListener('submit', function(){
+  submitted = true;
+});
+document.querySelector('iframe[name="hidden_iframe"]').addEventListener('load', function(){
+  if (submitted) {
+    submitted = false;
+    alert("Thanks! Your consultation request has been sent — we'll confirm by email.");
+    document.getElementById('bookingForm').reset();
+  }
+});
+</script>
 
 </body>
 </html>
