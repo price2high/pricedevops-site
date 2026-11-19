@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pre-Built Systems Catalog — Price DevOps</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <style>
+    :root {
+      --deep-black: #0a0a0a;
+      --royal-gold: #d4af37;
+      --rich-burgundy: #8c1c13;
+      --warm-sand: #fdf6e3;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--deep-black);
+      color: var(--warm-sand);
+    }
+
+    header {
+      background: var(--deep-black);
+      color: var(--royal-gold);
+      padding: 2.5rem 2rem 2rem;
+      text-align: center;
+      border-bottom: 3px solid var(--royal-gold);
+    }
+
+    header img.logo {
+      width: min(220px, 60vw);
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.1rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    header p.tagline {
+      margin: 0.5rem 0 0;
+      font-size: 1.05rem;
+      color: var(--warm-sand);
+    }
+
+    nav {
+      background: var(--rich-burgundy);
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem 1rem;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.55;
+    }
+
+    h2.category {
+      color: var(--royal-gold);
+      border-bottom: 2px solid var(--rich-burgundy);
+      padding-bottom: 0.4rem;
+      margin: 2.5rem 0 1.25rem;
+      font-size: 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: #141414;
+      border: 1px solid #2a2a2a;
+      border-top: 3px solid var(--royal-gold);
+      border-radius: 10px;
+      padding: 1.25rem;
+    }
+
+    .card h3 {
+      margin: 0 0 0.5rem;
+      color: var(--warm-sand);
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      margin: 0 0 0.9rem;
+      font-size: 0.95rem;
+      line-height: 1.45;
+      color: #e8dfc8;
+    }
+
+    .chip {
+      display: inline-block;
+      background: var(--rich-burgundy);
+      color: white;
+      font-size: 0.78rem;
+      font-weight: bold;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 3rem auto 2rem;
+    }
+
+    a.button {
+      display: inline-block;
+      background: var(--rich-burgundy);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.button:hover {
+      background: #141414;
+      outline: 2px solid var(--royal-gold);
+    }
+
+    footer {
+      background: var(--deep-black);
+      color: var(--warm-sand);
+      text-align: center;
+      padding: 2rem 1rem 2.5rem;
+      border-top: 3px solid var(--royal-gold);
+      margin-top: 2rem;
+    }
+
+    footer .foot-rooted {
+      color: var(--royal-gold);
+      font-style: italic;
+      margin: 0 0 0.5rem;
+    }
+
+    footer p {
+      margin: 0.25rem 0;
+    }
+
+    footer a {
+      color: var(--royal-gold);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="logo.png" alt="Price Dev Ops logo — a raised fist rising from circuit roots, with clouds" />
+    <h1>Pre-Built Systems</h1>
+    <p class="tagline">Systems built to be bought — and put straight to work.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="catalog.html">Catalog</a>
+    <a href="booking.html">Book Appointment</a>
+  </nav>
+
+  <main>
+    <p class="intro">
+      Not every business needs a custom build. These are ready-made systems — Notion workspaces and
+      Google Sheets dashboards — built by Price DevOps to organize the work from day one.
+      The catalog is growing; each system gets its own details, pricing, and purchase link as it opens up.
+    </p>
+
+    <h2 class="category">Notion Systems</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Trucking Command Center</h3>
+        <p>Loads, expenses, maintenance, and paperwork for owner-operators — one hub for the whole truck business.</p>
+        <span class="chip">Coming soon</span>
+      </div>
+      <div class="card">
+        <h3>Creator Content OS</h3>
+        <p>Content calendar, idea bank, brand deals, and posting pipeline — the system behind a working creator.</p>
+        <span class="chip">Coming soon</span>
+      </div>
+      <div class="card">
+        <h3>Small Business OS</h3>
+        <p>Projects, clients, money, and operations in one workspace built for owners who do it all.</p>
+        <span class="chip">Coming soon</span>
+      </div>
+      <div class="card">
+        <h3>ADHD Command Center</h3>
+        <p>Tasks, routines, and brain dumps organized in a way an ADHD brain can actually run on.</p>
+        <span class="chip">Coming soon</span>
+      </div>
+      <div class="card">
+        <h3>Nurse Life Hub</h3>
+        <p>Shifts, certs, sleep, and life admin — a hub built for people who work the hours nobody else does.</p>
+        <span class="chip">Coming soon</span>
+      </div>
+      <div class="card">
+        <h3>Real Estate Agent CRM</h3>
+        <p>Leads, listings, and follow-ups tracked in one place, so no client ever falls through the cracks.</p>
+        <span class="chip">Coming soon</span>
+      </div>
+    </div>
+
+    <h2 class="category">Google Sheets &amp; Dashboards</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Budget Dashboard</h3>
+        <p>A Google Sheets dashboard that shows where the money is going at a glance — no accounting degree needed.</p>
+        <span class="chip">Coming soon</span>
+      </div>
+      <div class="card">
+        <h3>Student Finance Planner</h3>
+        <p>Tuition, aid, and everyday spending planned out semester by semester.</p>
+        <span class="chip">Coming soon</span>
+      </div>
+      <div class="card">
+        <h3>Teacher Planner Pro</h3>
+        <p>Lessons, grades, and classroom admin in one spreadsheet system.</p>
+        <span class="chip">Coming soon</span>
+      </div>
+      <div class="card">
+        <h3>Landlord Property Tracker</h3>
+        <p>Rent, expenses, and maintenance across every property, rolled up into one view.</p>
+        <span class="chip">Coming soon</span>
+      </div>
+    </div>
+
+    <div class="cta">
+      <p>Want one of these systems — or one built for your business?</p>
+      <a href="booking.html" class="button">Book Your Consultation</a>
+    </div>
+  </main>
+
+  <footer>
+    <p class="foot-rooted">Rooted in Legacy. Building the Future.</p>
+    <p>Price DevOps · <a href="mailto:dev@headlinework.com">dev@headlinework.com</a> · <a href="tel:+16785613435">(678) 561-3435</a></p>
+  </footer>
+
+</body>
+</html>
