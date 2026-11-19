@@ -4,45 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Book an Appointment – Price DevOps</title>
+  <link rel="icon" type="image/png" href="logo.png" />
   <style>
     :root {
       --deep-black: #0a0a0a;
       --royal-gold: #d4af37;
       --rich-burgundy: #8c1c13;
       --earth-sand: #fdf6e3;
+      --warm-sand: #fdf6e3;
     }
-
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: var(--earth-sand);
       color: var(--deep-black);
     }
-
     header {
       background: var(--deep-black);
       color: var(--royal-gold);
       padding: 2rem;
       text-align: center;
     }
-
+    header img.logo {
+      width: min(340px, 78vw);
+      height: auto;
+      display: block;
+      margin: 0 auto 1.25rem;
+    }
     nav {
       background: var(--rich-burgundy);
       padding: 0.75rem;
       text-align: center;
     }
-
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 1rem;
       font-weight: bold;
     }
-
     nav a:hover {
       text-decoration: underline;
     }
-
     section {
       max-width: 700px;
       margin: 2rem auto;
@@ -51,13 +53,11 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-
     label {
       display: block;
       margin-top: 1rem;
       font-weight: bold;
     }
-
     input, textarea {
       width: 100%;
       padding: 0.75rem;
@@ -67,7 +67,6 @@
       margin-bottom: 1rem;
       font-size: 1rem;
     }
-
     button {
       background: var(--rich-burgundy);
       color: white;
@@ -78,46 +77,60 @@
       cursor: pointer;
       font-weight: bold;
     }
-
     button:hover {
       background: var(--deep-black);
+    }
+    footer {
+      background: var(--deep-black);
+      color: var(--warm-sand);
+      text-align: center;
+      padding: 2rem 1rem 2.5rem;
+      border-top: 3px solid var(--royal-gold);
+    }
+    footer .foot-rooted {
+      color: var(--royal-gold);
+      font-style: italic;
+      margin: 0 0 0.5rem;
+    }
+    footer p {
+      margin: 0.25rem 0;
+    }
+    footer a {
+      color: var(--royal-gold);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-
   <header>
+    <img class="logo" src="logo.png" alt="Price Dev Ops logo — a raised fist rising from circuit roots, with clouds" />
     <h1>Schedule a Consultation</h1>
     <p>Partner with Price DevOps to power your future.</p>
   </header>
-
   <nav>
     <a href="index.html">Home</a>
+    <a href="catalog.html">Catalog</a>
     <a href="booking.html">Book Appointment</a>
   </nav>
-
   <section>
     <form id="bookingForm" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSd8teUEjcEH83QkzKiT9cHVW3NYtnsbsPMJUZX8IULrX8RugQ/formResponse" target="hidden_iframe">
       <label for="name">Full Name</label>
       <input type="text" id="name" name="entry.1450040426" required />
-
       <label for="company">Company Name</label>
       <input type="text" id="company" name="entry.1727145170" />
-
       <label for="email">Email Address</label>
       <input type="email" id="email" name="entry.1227469851" required />
-
       <label for="date">Preferred Date</label>
       <input type="date" id="date" name="entry.298420541" required />
-
       <label for="details">What services are you interested in?</label>
       <textarea id="details" name="entry.439661853" rows="5" required></textarea>
-
       <button type="submit">Confirm Booking</button>
     </form>
     <iframe name="hidden_iframe" style="display:none"></iframe>
   </section>
-
 <script>
 var submitted = false;
 document.getElementById('bookingForm').addEventListener('submit', function(){
@@ -131,6 +144,9 @@ document.querySelector('iframe[name="hidden_iframe"]').addEventListener('load', 
   }
 });
 </script>
-
+  <footer>
+    <p class="foot-rooted">Rooted in Legacy. Building the Future.</p>
+    <p>Price DevOps · <a href="mailto:dev@headlinework.com">dev@headlinework.com</a> · <a href="tel:+16785613435">(678) 561-3435</a></p>
+  </footer>
 </body>
 </html>
